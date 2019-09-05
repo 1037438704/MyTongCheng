@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ninetaildemonfox.zdl.mytongcheng">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_about_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!-- ========今日头条适配========= -->
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="414" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="736" />
+        <!-- ========今日头条适配========= -->
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 积分详情 -->
+        <activity android:name=".aty.ShoppingMallDetailsActivity" />
+        <!-- 提交兑换 -->
+        <activity android:name=".aty.SubmitExchangeActivity" />
+        <!-- 登录界面 -->
+        <activity android:name=".aty.LoginActivity" />
+        <!-- 注册界面 密码 绑定等 -->
+        <activity android:name=".aty.RegisterActivity" />
+        <!-- 中奖名单 -->
+        <activity android:name=".aty.WinningListActivity" />
+        <!-- 签到界面 -->
+        <activity android:name=".aty.SignInActivity" />
+        <!-- 论坛中心 -->
+        <activity android:name=".aty.ForumActivity" />
+        <!-- 论坛正文 -->
+        <activity android:name=".aty.ForumTextActivity" />
+        <!-- 发布内容 -->
+        <activity android:name=".aty.PublishContentActivity" />
+        <!-- 比赛详情 -->
+        <activity android:name=".aty.DetailsOfCompetitionActivity" />
+        <!-- 开奖  彩票详情 -->
+        <activity android:name=".aty.DetailsAwardActivity" />
+        <!-- 跟单信息 -->
+        <activity android:name=".aty.DocumentaryInformationActivity" />
+        <!-- 推荐详情 -->
+        <activity android:name=".aty.RecommendationDetailsActivity" />
+        <!-- 支付成功界面 -->
+        <activity android:name=".aty.SuccessPayActivity" />
+        <!-- 储值 -->
+        <activity android:name=".aty.StoredValueActivity" />
+        <!-- 订单详情 -->
+        <activity android:name=".aty.OrderDetailsActivity" />
+        <!-- 战绩 -->
+        <activity android:name=".aty.RecordActivity" />
+        <!-- 个人信息 -->
+        <activity android:name=".aty.PersonalActivity" />
+        <!-- 钱包 -->
+        <activity android:name=".aty.WalletActivity" />
+        <!-- 1账户明细 2 提现明细 -->
+        <activity android:name=".aty.DetailedActivity" />
+        <activity android:name=".aty.ForumMyActivity"></activity>
+    </application>
+
+</manifest>

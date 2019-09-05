@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="aty.SubmitExchangeActivity">
+
+    <include layout="@layout/title_layout_top" />
+
+    <TextView
+        android:id="@+id/text_add_laction"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/whileColor"
+        android:drawableLeft="@mipmap/icon_mall_increase"
+        android:drawablePadding="13dp"
+        android:drawableRight="@mipmap/icon_down"
+        android:gravity="center_vertical"
+        android:paddingLeft="11dp"
+        android:paddingRight="15dp"
+        android:text="添加收货地址"
+        android:textColor="@color/blackColor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/whileColor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="张某某  13659296566"
+            android:textColor="@color/blackColor"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:drawableLeft="@mipmap/icon_mall_adress"
+            android:padding="10dp"
+            android:text="天津市南开区鑫茂科技园B座1809" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="13dp"
+            android:src="@mipmap/icon_down" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/whileColor"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="15dp"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="商品详情" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:padding="13dp">
+
+        <ImageView
+            android:id="@+id/image_head"
+            android:layout_width="87dp"
+            android:layout_height="87dp"
+            android:src="@mipmap/icon_home_adresspg" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_head"
+            android:text="商品名称商品名称"
+            android:textColor="@color/blackColor"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/text_loaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_head"
+            android:drawableLeft="@mipmap/icon_mall_integration"
+            android:drawablePadding="10dp"
+            android:text="200"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="使用积分：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="200"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="立即兑换"
+            android:textColor="@color/whileColor"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+</LinearLayout>
